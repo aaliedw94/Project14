@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Amethysta');
+$mygradient: radial-gradient(#b008d1, #05899d, #000000 85%);
+$lightgradient: radial-gradient(#e47ff8, #8cc8d1, #ebebeb 85%);
+$h1font: "Helvetica", sans-serif;
+$h2font:"Amethysta", serif;
+$h2-color: #d89a64;
+$h3font: Helvetica;
+$mainfont: Helvetica;
+$font-shadow: 1px 1px 2px #ffffff, 0 0 10px #ad9f00, 0 0 5px #b6dcb6;
+$text-glow-before: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0d6efd, 0 0 40px #0d6efd, 0 0 50px #0d6efd;
+$text-glow-after: 0 0 20px #fff, 0 0 30px #c02e1d, 0 0 40px #c02e1d, 0 0 50px #c02e1d, 0 0 60px #c02e1d, 0 0 70px #c02e1d, 0 0 80px #c02e1d;
+/*--sass variables above*/
+
+body{
+    background-image: $lightgradient;
+    color: rgb(41, 34, 34);
+
+    h1{
+       font-size: 36px;
+       color: #3F3544;
+       animation: glow 2s ease-in-out alternate;
+
+       @keyframes glow {
+            from {
+                text-shadow: $text-glow-before;
+            }
+            to {
+                text-shadow: $text-glow-after;
+            }
+       }
+
+    }
+}
+
+p {
+    text-indent: 20px;
+    display: grid;
+    border-style: inset;
+    border-color: rgb(251, 246, 246);
+    border-radius: 5px;
+    background-color: #efac3a;
+    padding: 10px;
+    color: rgb(36, 8, 8);
+  }
+
+.dark-mode p{
+    text-indent: 20px;
+    display: grid;
+    border-style: inset;
+    border-color: rgb(251, 246, 246);
+    border-radius: 5px;
+    background-color: #161006;
+    padding: 10px;
+    color: rgb(240, 236, 236);
+  }
+
+.dark-mode body{
+    background-image: $mygradient;
+    color: white;
+
+    h1{
+       font-size: 36px;
+       color: #3F3544;
+       animation: glow 2s ease-in-out alternate;
+
+       @keyframes glow {
+            from {
+                text-shadow: $text-glow-before;
+            }
+            to {
+                text-shadow: $text-glow-after;
+            }
+       }
+
+    }
+}
+
+.grid-container{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "footer footer footer";
+    
+    align-content: space-evenly;
+
+    header {
+        color: rgb(227, 227, 227);
+        background-color: #d89df6;
+        text-align: center;
+        text-decoration: bold;
+        text-shadow: $font-shadow;
+        grid-area: header;
+        ul{
+            list-style-type: none;
+        }
+        max-width: 75vh;
+    }
+
+    main{
+        grid-area: main;
+        h2{
+            font-style: $h2font;
+            color: $h2-color;
+            font-size: 28px;
+            text-shadow: rgba(85, 126, 62, 0.99) 2px 2px 2px;
+            background-color: #a07c7c;
+            animation: h2 2s ease-in-out 0s 1 normal none;
+            @keyframes h2{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            text-align: center;
+        }
+    
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+
+
+.dark-mode .grid-container{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "footer footer footer";
+    
+    align-content: space-evenly;
+
+    header {
+        color: rgb(179, 179, 179);
+        background-color: #4D0273;
+        text-align: center;
+        text-decoration: bold;
+        text-shadow: $font-shadow;
+        grid-area: header;
+        ul{
+            list-style-type: none;
+        }
+        max-width: 75vh;
+    }
+
+    main{
+        grid-area: main;
+        h2{
+            font-style: $h2font;
+            color: $h2-color;
+            font-size: 28px;
+            text-shadow: rgba(85, 126, 62, 0.99) 2px 2px 2px;
+            background-color: #a07c7c;
+            animation: h2 2s ease-in-out 0s 1 normal none;
+            @keyframes h2{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            text-align: center;
+        }
+    
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+//styling for buttons being hovered over.
+.btn-hover {
+    width: 200px;
+    border-radius: 15px;
+    font-size:1.2rem;
+    border: dashed #b008d1;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: orange;
+    transition: all 0.3s ease-out;
+}
+//dark mode styling for when buttons are hovered over
+.dark-mode .btn-hover{
+    width: 200px;
+    border-radius: 15px;
+    font-size:1.2rem;
+    border: dashed #b008d1;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: rgb(123, 80, 0);
+    transition: all 0.3s ease-out;
+}
+//styling for buttons upon being hovered
+.btn-hover:hover {
+    border-color: #c02e1d;
+    background:rgba(51, 84, 32, 0.99);
+    color: white;
+    font-weight: 400;
+    transition: all 0.3s ease-out;
+}
+.dark-mode .btn-hover:hover {
+    border-color: #c02e1d;
+    background:rgba(42, 79, 21, 0.99);
+    color: rgb(249, 249, 249);
+    font-weight: 400;
+    transition: all 0.3s ease-out;
+}
+
+//styling for my intro paragraph
+.intro {
+    background-color: #e8e6e6;
+    color: rgb(46, 46, 46);
+}
+//styling for my intro paragraph in dark mode
+.dark-mode .intro {
+    background-color: #3b3b3b;
+    color: whitesmoke;
+}
+
+.intro::first-letter{
+    font-size: 150%;
+}
+
+.ld-container {
+    display: grid;
+    width: 25%;
+    min-height: 25px;
+    text-align: center;
+  }
+//styling for the light/dark toggle
+  .light-dark-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+
+  .light-dark-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+  //styling for my footer in dark mode
+  .dark-mode footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(41, 7, 7);
+    padding: 5px;
+  }
+  
+  /* Dark mode button styles */
+  
+  /* Dark mode paragraph styles */
+  h1 {
+      font-weight: bolder;
+      background-image: radial-gradient(circle, #44feca 75%, #eda2fa 95%);
+      background-size: 100%;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      animation: h1-test 3s ease-in;
+      font-style: italic;
+      padding-top: 10px;
+      text-shadow: 3px 5px 10px #c24e1c;
+  }
+//Adding in the code for fade-slide-in effect
+
+.my_item{
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.5s;
+  }
+//connecting my_item to my paragraph items
+  .my_item > p {
+    text-align: center;
+  }
+  //slide in to the left
+  .left {
+    transform-origin: left center;
+    transform: translateX(50%);
+  }
+  //slide in to the right
+  .right {
+    transform-origin: right center;
+    transform: translateX(-50%);
+  }
+  /* Attempt to slide items from the bottom to the top. Attempted to use for my main image on my homepage.
+  This works when I have my browswer minimized for my index.html?*/
+  .up {
+    transform-origin: bottom center;
+    transform: translateY(-10px);
+  }
+
+  .slide-in {
+    opacity: 1 !important;
+    transform: translateX(0) translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }

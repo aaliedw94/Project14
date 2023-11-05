@@ -1,0 +1,159 @@
+* {
+    background-color:rgb(1, 203, 139);
+}
+/*dark mode styling for general page background*/
+.dark-mode * {
+    background-color: black;
+}
+h1{
+    color:bisque;
+    animation: h1-text 5s ease-in-out;
+}
+@keyframes h1-text{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        &h1-text:nth-child(even) {
+            transform: rotateY(45deg);
+            opacity: 100%;
+        }
+    }
+    40%{
+        opacity: 100%;
+    }
+    60%{
+        opacity: 100%;
+    }
+    80%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+h2 {
+    color: black;
+}
+/*dark more style for h2 elements*/
+.dark-mode h2 {
+    color: white;
+}
+/*paragraph styling*/
+p {
+    color: black;
+    background-color: white;
+    width: 100%;
+    border-style: solid;
+    border: 5px red;
+    margin: 5px;
+    padding: 5px;
+}
+
+.dark-mode p{
+    color: white;
+    background-color: rgb(59, 0, 0);
+}
+.dark-mode h1{
+    color:rgb(252, 242, 231);
+    animation: h1-text 5s ease-in-out;
+}
+@keyframes h1-text{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        &h1-text:nth-child(even) {
+            transform: rotateY(45deg);
+            opacity: 100%;
+        }
+    }
+    40%{
+        opacity: 100%;
+    }
+    60%{
+        opacity: 100%;
+    }
+    80%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.ld-container {
+    display: grid;
+    width: 25%;
+    min-height: 25px;
+    text-align: center;
+  }
+/*light dark toggle code below*/
+  .light-dark-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+
+  .light-dark-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+/*beginning of JS styling for fade-slide in effect*/
+  .my_item{
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.5s;
+  }
+/*For my paragraph elements*/
+  .my_item > .p_content {
+    text-align: center;
+  }
+  
+  .left {
+    transform-origin: left center;
+    transform: translateX(50%);
+  }
+  
+  .right {
+    transform-origin: right center;
+    transform: translateX(-75%);
+  }
+  .up {
+    transform-origin: center bottom;
+    transform: translateY(-25%);
+  }
+
+  .slide-in {
+    opacity: 1 !important;
+    transform: translateX(0) translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }

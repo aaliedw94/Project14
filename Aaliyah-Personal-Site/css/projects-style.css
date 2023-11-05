@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Amethysta');
+
+/*body styling*/
+body {
+  background-color: rgb(40, 243, 243);
+  color: rgb(3, 11, 12);
+  font-family: 'Amethysta', cursive; /* Apply the imported font */
+}
+/*grid set up for my projects cards*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  grid-gap: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+/*card styling*/
+.card {
+  width: 75%;
+}
+
+.card-center {
+  align-items: center;
+  margin-left: 45%;
+}
+
+/*header styling*/
+header {
+  color: black;
+  text-align: center;
+}
+/*grid styling for main*/
+main {
+  grid-area: main;
+  align-items: center;
+}
+
+footer {
+    color: black;
+}
+.ld-container {
+  display: grid;
+  width: 25%;
+  min-height: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+/*beginning code for my light/dark styling*/
+.light-dark-switch {
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.13rem;
+  margin-bottom: 0.63rem;
+  margin-inline: auto;
+}
+
+.light-dark-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: all 0.4s ease-in;
+  border-radius: 2.13rem;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.63rem);
+}
+.dark-mode {
+  background-color: rgb(1, 51, 44);
+  transition: all 0.5s ease-in;
+}
+
+.dark-mode .container-dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border-style: inset;
+  border-radius: 5px;
+  background-color: rgb(41, 7, 7);
+  padding: 5px;
+}
+
+/* Dark mode button styles */
+.dark-mode .btn {
+  background-color: #2d9c94;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1.0px;
+  border-color: rgb(250, 241, 171);
+  color: #ebbeff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark-mode .btn:hover {
+  border-color: #2d9c94;
+  border-radius: 25%;
+  border-width: 0.5px;
+  background: #193230;
+  color: #ebbeff;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+
+.dark-mode .card-text {
+  color: white;
+}
+
+/* Dark mode paragraph styles */
+.dark-mode p {
+  text-indent: 20px;
+  display: grid;
+  border-style: inset;
+  border-color: rgb(251, 246, 246);
+  border-radius: 5px;
+  background-color: #0c2f2c;
+  padding: 10px;
+  color: white;
+}
+.dark-mode h1 {
+    font-weight: bolder;
+    color: whitesmoke;
+    animation: h1-test 3s ease-in;
+    font-style: italic;
+}
+.dark-mode header{
+  background-color: black;
+}
+
+.dark-mode .card-body{
+  background-color: rgb(3, 3, 134);
+}
+
+.dark-mode h5 {
+  color: peachpuff;
+}
+
+/*JS styling for fade-slide-in effect*/
+.my_item {
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.5s;
+}
+/*linking my_item to my cards*/
+.my_item > card {
+  text-align: center;
+  transform-origin: bottom center;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+/*directions for left transformation*/
+.left {
+  transform-origin: left center;
+  transform: translateX(50%);
+}
+/*directions for transformation to the right*/
+.right {
+  transform-origin: right center;
+  transform: translateX(-50%);
+}
+/*directions for transformation upwards*/
+.up {
+  transform-origin: bottom center;
+  transform: translateY(-50%);
+}
+
+.down {
+  transform-origin: top center;
+  transform: translateY(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}

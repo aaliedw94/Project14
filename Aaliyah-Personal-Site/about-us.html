@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/about-sass.css" />
+  <title>Aaliyah Edwards's Web Page</title>
+</head>
+<body>
+  <div class="grid-container">
+    
+  <header>
+  <h1>Getting to know Aaliyah Edwards<br>
+    <img src="./media/Me.jpg" height="200px" width="200px" alt="Picture of myself"><br></h1>
+    <div class ="ld-container">
+      <td><p class ="mode-stat p-dark">Light Mode</p>
+      <label class = "light-dark-switch">
+        <input type="checkbox" id="mode">
+        <span class ="slider"></span>
+      </label>
+    </div>
+    <!--navbar for header with different sections with information-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav nav-pills flex-column" id="pills-tab" role="tablist" aria-orientation="vertical">
+              <li class="nav-item" role="presentation">
+                <button class="btn-hover nav-link active" id="pills-ms-tab" data-bs-toggle="pill" data-bs-target="#pills-ms" type="button" role="tab" aria-controls="pills-ms" aria-selected="true">Mission Statement</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn-hover nav-link" id="pills-life-tab" data-bs-toggle="pill" data-bs-target="#pills-life" type="button" role="tab" aria-controls="pills-life" aria-selected="true">Early Life/Family</button>
+              </li>
+              
+              <!--This tab would not work for some reason, despite doing the exact same thing that I did for my other tabs-->
+
+              <li class="nav-item" role="presentation">
+                <button class="btn-hover nav-link" id="pills-myexperience-tab" data-bs-toggle="pill" data-bs-target="#pills-myexperience" type="button" role="tab" aria-controls="pills-myexperience" aria-selected="false">Experience</button>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn-hover nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact Information</button>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+<main>
+<!--The content that displays upon pressing the buttons in the header is below
+    for the welcome tab, personal life, experience and contact me tab-->
+  <div class="tab-content" id="pills-tc">
+    <div class="tab-pane fade show active" id="pills-ms" role="tabpanel" aria-labelledby="pills-ms-tab" tabindex="0">
+        <h2>Welcome to Aaliyah's About Me Page!</h2>
+      <p class="intro my_item left">Hello everyone! My name is Aaliyah Edwards and I'm pleased to welcome you to my personal About Me page where I professional information and personal information about my life.
+        This page is also part of my learning journey in the world of Web Development, to showcase my skillset.
+        As I continue to hone my development skills, I will update this page to reflect that. Thank you 
+        for stopping by and feel free to contact me, using the information in the contact info tab! </p>
+
+      </div>
+
+    <div class="tab-pane fade" id="pills-life" role="tabpanel" aria-labelledby="pills-life-tab" tabindex="0">
+    <h2>Personal life</h2>
+        <p class="my_item right">I am 29 years old and currently live in Tulsa, OK. I am a software development student with Correlation One, an educational organization partnered with Amazon. 
+          I am also currently employed at Amazon as a Fullfilment Center Associate and at Hillcrest Medical Center as a PBX Operator. 
+          I have been employed with Amazon for about 2 years and at Hillcrest for over 3 and a half years. I am hoping to shift into the field of software and web development, 
+          as I've always had an interest in computers and technology. When I'm not working or studying, I like to play games, read, watch anime, shop, spend time with family and friends, watch ASMR and more! 
+          I have 1 younger brother and through him, I have 4 beautiful nieces who are my pride and joy. They are the closest thing to children that I have, as I don’t have any of my own. I have included a picture of each below, aren’t they adorable?!<br></p>
+        <p class="my_item left">My name is Aaliyah and I'm currently 28 years old and live in Tulsa, OK. I work part-time at the DOK2 Amazon site in Tulsa as a Sortation Associate for the Prime For Same Day Team and have been on this team for almost two years (August 20th). 
+          I also work for Hillcrest Medical Center in Tulsa and have been there for over 3 and a half years! Some of my favorite hobbies include gaming, reading books, anime, spending time with family, and shopping. 
+          I am currently a student of a Software/Web Development course through an organization called Correlation One. This site is the start of my work that I will be displaying as part of my learning journey in web development. 
+          I have a bit of a background in Computer Science and I'd like to briefly talk about it. I was previously studying at Tulsa Community College and Oklahoma State University (Go Pokes). 
+          I graduated from TCC with an AS in Mathematics in 2015 and an AS in Computer Information Systems after I changed my major and started my journey again in 2019. I attended OSU-Tulsa starting in 2019 as well and was majoring in Computer Science. 
+          I'm actually close to graduating, but I had stopped attending in 2022 after going through some personal things in life. I plan to go back and finish getting my Bachelor's to add to my credentials. 
+          I have added my <a href="https://www.linkedin.com/in/aaliyah-edwards-4364977b/" target="_blank">LinkedIn</a> here, and at the bottom of the page, if you'd like to view more information regarding my professional upcoming. 
+          If you'd like a glimpse of my personal life, I'm mainly on Facebook and Twitter, which I've plugged the links for at the bottom of the page.</p>
+        <!--I created a couple of cards for my nieces pictures-->
+        <div class="row">
+            <div class="col-sm-3">
+        <div class="card border-primary" style="max-width: 150px;"> <!--Their names are Arianna and Aaliyah, who are 3-year old twins; An interesting fact about my twin nieces is that they were born on my mother's birthday and were born 5 and 6 minutes, respectively, before my father passed away back in 2020. -->  
+            <img src="./media/Aaliyah.jpg" class="card-img-top" alt="Aaliyah's picture">
+        <div class="card-body">
+            <h3 class="card-text" style="color: black">Aaliyah: 3-years old</h3>
+        </div></div></div>
+        
+        <div class="col-sm-3">
+        <div class="card border-primary" style="max-width: 150px;"> <!--Their names are Arianna and Aaliyah, who are 3-year old twins; An interesting fact about my twin nieces is that they were born on my mother's birthday and were born 5 and 6 minutes, respectively, before my father passed away back in 2020. -->  
+            <img src="./media/Arianna.jpg" class="card-img-top" alt="Arianna's picture">
+        <div class="card-body">
+            <h3 class="card-text" style="color: black">Arianna: 3 years old</h3>
+        </div></div></div>
+        
+        <div class="col-sm-3">
+        <div class="card border-primary" style="max-width: 150px;"> <!--Their names are Arianna and Aaliyah, who are 3-year old twins; An interesting fact about my twin nieces is that they were born on my mother's birthday and were born 5 and 6 minutes, respectively, before my father passed away back in 2020. -->  
+            <img src="./media/DeMarriah.jpg" class="card-img-top" alt="De'Marriah's picture">
+        <div class="card-body">
+            <h3 class="card-text" style="color: black">De'Marriah: 3 years old</h3>
+        </div></div></div>
+
+        <div class="col-sm-3">
+        <div class="card border-primary" style="width: 125px;"> <!--Their names are Arianna and Aaliyah, who are 3-year old twins; An interesting fact about my twin nieces is that they were born on my mother's birthday and were born 5 and 6 minutes, respectively, before my father passed away back in 2020. -->  
+            <img src="./media/Taylauni.jpg" class="card-img-top" alt="Taylauni's picture">
+        <div class="card-body">
+            <h3 class="card-text" style="color: black">Taylauni: 1 month</h3>
+        </div></div></div>
+
+        </div>
+    </div>
+    
+
+    <!--experience tab in the navbar-->
+    <div class="tab-pane fade" id="pills-myexperience" role="tabpanel" aria-labelledby="pills-myexperience" tabindex="0">
+
+        <h2>Work Experience/Goals</h2>
+        <p class="my_item right"><b>As of right now, I currently work two jobs. I have been working part-time at Amazon since August 2021. 
+          I work for the PFSD (Prime for Same Day) team at DOK2 Tulsa. Our team is super amazing and currently holds the
+          record for most days with On Time Dispatch for our region (17 days), which consists of Colorado/Texas/Oklahoma. 
+          I work overnight, full-time at Hillcrest Medical Center as a PBX Operator. With that, I answer calls from outside and within the hospital, 
+          I run emergency codes and do some general computer/office work as well. I have been here since December 2019.
+          One of my main goals for right now, is to go from having two jobs to one job in my field of interest. 
+          I hope that this course, and potentially finishing my degree in CS, will elevate that pursuit as well. 
+          While Software Development is the major pursuit career wise, I have also considered such fields as Cybersecurity and Video Game Development as well. 
+          Whatever path that I take, I hope that it's one that I will enjoy and experience longevity and endless learning. 
+          It would be unhonest of me to not mention my hopes of a career that will pay off financially. 
+          Such things as how tough things are today and my background/upbringing fuel this hope. </b></p>
+      
+        <h2>Education/Achievements</h2>
+        <p class="my_item left"> I graduated from a little charter school named Dove Science Academy in 2012. After I graduated from high school,
+         I went on to attend Tulsa Community College, where I graduated with an A.S. in Mathematics in 2015.  
+         After that, I transferred to Northeastern State University from 2015-2016, but stopped attending after Spring 2016. 
+         I took a hiatus for a couple of years, where I mainly worked full-time and took care of my parents and brother. 
+         I decided to go back to school in 2018 and applied to Oklahoma State University for the Spring 2019 semester.  
+         This is where I decided to change my major to Computer Science. I changed my major because I was so interested in working with computers and technology and wanted to go into a field that would ensure that. 
+         I currently have a couple of courses left before I graduate with my Bachelor's and I plan to finish in the Spring.
+         Another thing that I consider an achievement was discovering and applying for this program. I know that it's just
+         the second week, but I'm enjoying the experience and everything that we've learned so far.</p>
+
+    </div>
+
+    <!--tab for contact information-->
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact" tabindex="0">
+      <h2>Contact Me!</h2>
+      <p class="my_item right">If you'd like to reach out to me, you may fill out the information below and I'll get back to you as soon as possible!
+        Also, my social media pages where I can be contacted are at the bottom of the page. Once again, thanks for stopping by and take care!</p>
+      <h3>Questions/Comments/Feedback &#128187&#10067<h3>
+        <form action="/example_action.html" target="_blank" method="post">
+        <label for="ExperienceRate"><b>Rate your Experience?</b></label>
+        <select name="Rating" id="Rating">
+          <option value="Excellent">Excellent</option>
+          <option value="Great">Great</option>
+          <option value="Decent">Decent</option>
+          <option value="semibad">Not so great</option>
+          <option value="bad">Back to the drawing board.</option>
+        </select><br>
+        <label for="firstname">First Name: </label>
+        <input type="text" id="firstname" name=firstname><br>
+        <label for="lastname">Last Name: </label>
+        <input type="text" id="lastname" name=lastname><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name=email><br>
+        <label for="questions-comments">Questions/Comments: <br></label>
+        <input type="text" id="questions-comments" name=questions-comments><br>
+        <input type="submit" value="submit">
+        </form>
+    </div>
+
+  </div>
+  </main>
+  
+  <!--footer includes links to personal pages-->
+  <footer>
+  <p><a href="https://twitter.com/LiyahDanielle">Twitter</a> | <a href="https://www.facebook.com/aaliyah.edwards.14">Facebook</a> | <a href="https://www.instagram.com/aalidanielle/">Instagram</a> | <a href="https://www.linkedin.com/in/aaliyah-edwards-4364977b/">LinkedIn</a> | <a href="https://codepen.io/Aaliyah-Edwards-the-vuer">CodePen</a></p>
+</footer>
+</div>
+<script src=".//javascript/java.js"></script>
+</body>
+</html>

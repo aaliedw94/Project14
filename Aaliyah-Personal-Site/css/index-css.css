@@ -1,0 +1,401 @@
+*{
+    font-family: Arial; /*added the Arial font family to all text, except the paragraphs in the content area*/
+  }
+  
+  header {
+    background-color: #c1b8fd;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    background-image: radial-gradient(circle, rgb(35, 130, 103) 11%, rgba(225, 70, 252, 1) 100%);
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    animation: h1-test 3s ease-in;
+    text-shadow: 3px 5px 10px #c24e1c;
+    font-style: italic;
+    padding-top: 10px
+  }
+
+  @keyframes h1-test {
+    0% {
+      opacity: 100%;
+      
+    }
+    50%{
+      opacity: 50%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  .smileyimg {
+    /* display:grid; */
+    width: 150px;
+    margin-left: auto;
+    height: 75px;
+  }
+  .btn {
+    background-color: #0df5e6;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1.0px;
+    border-color:rgb(0, 0, 0);
+    color:#3d4545;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size:16px;
+    
+  }
+
+  .btn:hover {
+    border-color: #cf7f76;
+    border-radius: 25%;
+    border-width: 0.5px;
+    background:#0df5e6;
+    color: rgb(37, 13, 13);
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+  
+  /*Function for table header*/
+  .table-header {
+    display: grid;
+    grid-template: auto auto auto auto auto auto;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 5px;
+  }
+  /*Making the color of the text in our navigation bar white*/
+  .a-style {
+    color: rgb(255, 255, 255);
+  }
+  
+  /*background image for the page*/
+  body {
+    background-color: rgb(203, 50, 254);
+    color: #2F4F4F;
+  }
+
+  .container {
+    background-color:#d5d0f9;
+  }
+  
+  .td-self {
+    width: 35%;
+  }
+  
+  .td-search {
+    border-style:solid;
+    padding:5px;
+  }
+  /*Adding background color, border w/ border color, and indentation for text*/
+  .p_content {
+    text-indent: 20px;
+    display: grid;
+    border-style: inset;
+    border-color: red;
+    border-radius: 5px;
+    background-color: #FFEBCD;
+    padding: 10px;
+  }
+  
+  /*.p_link { For the paragraph with a link included, having a grid display caused the link to appear on a seperate line.
+    text-indent: 20px;
+    display: block;
+    border-style: inset;
+    border-color: red;
+    border-radius: 5px;
+    background-color: #FFEBCD;
+    padding: 10px;
+  }*/
+  
+  
+  h2 {
+    font-family: monospace;
+    color: #483D8B;
+    background-image: radial-gradient(circle, rgba(222, 251, 63, 1) 11%, rgba(225, 70, 252, 1) 100%);
+    background-size: 100%;
+    font-size: 24px;
+    text-decoration: underline;
+    border-style:solid;
+    border-color: yellow;
+  }
+  
+  h3{
+    color: rgb(83, 207, 38);
+    background-color: rgb(112, 112, 112);
+    border-style: dashed;
+    border-color: black;
+    padding: 5px;
+  }
+  
+  /*The two logo functions below are for the logo images that will take users to my personal social media pages*/
+  .logo-img{
+    width:60px;
+  }
+  
+  .logos{
+     width: 100px;
+      height: 30px;
+  }
+  
+  /*For the links in the footer*/
+  .foot {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(238, 234, 234);
+    padding: 5px;
+  }
+  
+  /*This makes the search text white*/
+  .label-search {
+    color:white;
+  }
+  /*Makes all other labels the color violet*/
+  label {
+    color:rgb(41, 32, 41);
+  }
+
+  .ld-container {
+    display: grid;
+    width: 25%;
+    min-height: 25px;
+    text-align: center;
+  }
+
+  .light-dark-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+
+  .light-dark-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+  .dark-mode {
+    background-color: rgb(150, 109, 116);
+    transition: all 0.5s ease-in;
+  }
+  
+  .dark-mode .container-dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-mode footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(41, 7, 7);
+    padding: 5px;
+  }
+  
+  /* Dark mode button styles */
+  .dark-mode .btn {
+    background-color: #2d9c94;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1.0px;
+    border-color: rgb(250, 241, 171);
+    color: #ebbeff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dark-mode .btn:hover {
+    border-color: #2d9c94;
+    border-radius: 25%;
+    border-width: 0.5px;
+    background: #193230;
+    color: #ebbeff;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+  }
+  
+  /* Dark mode paragraph styles */
+  .dark-mode p {
+    text-indent: 20px;
+    display: grid;
+    border-style: inset;
+    border-color: rgb(251, 246, 246);
+    border-radius: 5px;
+    background-color: #281c07;
+    padding: 10px;
+    color: white;
+  }
+  .dark-mode h1 {
+      font-weight: bolder;
+      background-image: radial-gradient(circle, #44feca 75%, #eda2fa 95%);
+      background-size: 100%;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      animation: h1-test 3s ease-in;
+      font-style: italic;
+      padding-top: 10px;
+      text-shadow: 3px 5px 10px #c24e1c;
+  }
+  .dark-mode header{
+    background-color: black;
+  }
+  .dark-mode body-dark {
+    background-color: rgb(90, 0, 0);
+  }
+  .dark-mode label {
+    color: white;
+  }
+
+  /*Styling for my selfie*/
+  .self-image {
+    display: grid;
+    width: 300px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    height: 350px;
+    filter: drop-shadow(10px 10px 10px black);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+  }
+
+  .my_item {
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.5s;
+  }
+
+  .my_item > .p_content {
+    text-align: center;
+  }
+  .my_item > .self-image {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.5s;
+  }
+/*For my form at the bottom of my page?*/
+  .my_item > .my_form {
+    text-align: center;
+    opacity: 0.1;
+  }
+  
+  .left {
+    transform-origin: left center;
+    transform: translateX(50%);
+  }
+  
+  .right {
+    transform-origin: right center;
+    transform: translateX(-50%);
+  }
+  /*This works when I have my browser minimized for my image?*/
+  .up {
+    transform-origin: bottom center;
+    transform: translateY(-50%);
+  }
+
+  .slide-in {
+    opacity: 1 !important;
+    transform: translateX(0) translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  /*Styling for contact form validation incoming*/
+  
+  #contact-successful {
+    margin-bottom: 3rem;
+    border-radius: 3px;
+    background-color: rgb(67, 161, 67);
+    padding: 0.5rem;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    display: none;
+  }
+  
+  #contactForm {
+    width: 40%;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group:not(.radio):not(.checkbox) {
+    gap: 0.25rem;
+    flex-direction: column;
+  }
+  
+  .input-group:not(.radio):not(.checkbox) input {
+    width: 100%;
+    border-radius: 0.375rem !important;
+  }
+  
+  .input-group.radio {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .input-group.select select {
+    width: 100%;
+  }
+  
+  legend {
+    font-size: 1rem;
+    width: max-content;
+  }
+  
+  .form-buttons {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  
+  .form-buttons > button {
+    padding: 0.3rem 1.5rem;
+  }
+  
+  .form-buttons > .submit {
+    padding-inline: 3rem;
+  }
+  
+  .name-error {
+    display: none;
+  }
